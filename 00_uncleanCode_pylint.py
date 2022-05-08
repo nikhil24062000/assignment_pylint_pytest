@@ -1,4 +1,5 @@
-import string;
+"hello"
+import string
 
 shift = 3
 choice = input("would you like to encode or decode?")
@@ -21,9 +22,3 @@ if choice == "decode":
             encoded = encoded + letters[x]
 
 print(encoded)
-
-
-####
-/**
-Source : http://pylint.pycqa.org/en/latest/tutorial.html
-**/        
