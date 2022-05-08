@@ -63,7 +63,7 @@ class ReadmeItem(pytest.Item):
         """Run the test"""
         builtins = dict(self.builtins)
         byte_code = compile(self.spec, '<inline>', 'exec')
-        _with_patched_sleep(exec, byte_code, builtins)
+        _with_patched_sleep('exec', byte_code, builtins)
         msg, _, error = api.run(['--no-color-output', '-c', self.spec])
         if error:
             # Ignore missing errors related to the injected names
