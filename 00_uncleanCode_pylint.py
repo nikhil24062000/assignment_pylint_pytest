@@ -6,7 +6,7 @@ CHOICE = input("would you like to encode or decode?")
 WORD = input("Please enter text")
 LETTERS = string.ascii_letters + string.punctuation + string.digits
 ENCODED = ''
-if CHOICE == "encode":
+if CHOICE == "ENCODED":
     for letter in WORD:
         if letter == ' ':
             ENCODED = ENCODED + ' '
