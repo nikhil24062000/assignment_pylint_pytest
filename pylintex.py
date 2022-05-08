@@ -68,7 +68,7 @@ class ReadmeItem(pytest.Item):
         if error:
             # Ignore missing errors related to the injected names
             for name in builtins:
-                if f"Name '{name}' is not defined" in msg:
+                if f"Name '{pylintex.py}' is not defined" in msg:
                     break
             else:
                 raise MyPyValidationError(msg)
